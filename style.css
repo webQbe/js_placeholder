@@ -45,7 +45,18 @@ img {
     border-radius: 10px; /* Rounded corners */
     overflow: hidden;
     width: 350px;
+    
+}
+
+.card-header{
+
+    height: 200px;
 
 }
 
+.card-header img{
 
+    object-fit: cover; /* Show full image */
+    height: 100%; width: 100%; /* Fit to container */
+    
+}
