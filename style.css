@@ -130,5 +130,70 @@ img {
 
     color: #aaa;
     margin-top: 5px; /* Push downwards */
-    
+
 }
+
+
+.animated-bg {
+    background-image: linear-gradient(/* Create a gradient effect transitioning horizontally across the element */
+                        to right, /* Direction of the gradient */
+                        #f6f7f8 0%,  /* Color at the start of the gradient */
+                        #edeef1 10%, /* A different color at 10% of the width */
+                        #f6f7f8 20%, /* Back to the original color at 20% */
+                        #f6f7f8 100%); /* Stays the same color until the end */
+
+    background-size: 200% 100%; /* Breakdown of 200% 100%:
+    200% (Width):
+        The background image's width is scaled to 200% of the element's width, effectively making it twice as wide as the element.
+        As a result, only half of the background image is visible at any given time within the element's boundaries.
+
+    100% (Height):
+        The background image's height matches 100% of the element's height.
+        The background image fully covers the height of the element without scaling vertically.
+
+    */
+    animation: bgPos 1s linear infinite; /* How It Works:
+
+        The animation named bgPos runs for 1 second per cycle (1s).
+
+        During the animation, the background image shifts smoothly from its starting position (50% 0) to its ending position (-150% 0).
+
+        The linear timing function ensures that the movement is at a constant speed.
+
+        The infinite keyword makes the animation repeat forever.
+
+    */
+}
+
+@keyframes bgPos {
+
+     /* Start position of the background image */ 
+    0% { background-position: 50% 0;}
+
+    /* End position of the background image */ 
+    100% { background-position: -150% 0; }
+
+    /* Background Position Values:
+
+        50% 0: Moves the background horizontally to the center while keeping the vertical position at the top (0).
+        
+        -150% 0: Moves the background horizontally far to the left, simulating a sliding effect. 
+    */
+}
+
+.animated-bg-text{
+    border-radius: 50px;
+    display: inline-block;  /* Makes an element behave as a hybrid between inline and block elements, combining features from both types.  
+
+    Width and Height    : Can be set
+    Line Break          : Does not cause a line break
+    Respects Box Model  : Fully respects width and height
+    Can Sit Inline      : Yes */
+    margin: 0;
+    height: 10px;
+    width: 100%;
+}
+
+
+
+
