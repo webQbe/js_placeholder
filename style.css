@@ -20,6 +20,12 @@ body {
 }
 
 
+img {
+
+    max-width: 100%; /* Fit to container */
+
+}
+
 
 
 
