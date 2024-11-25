@@ -1,0 +1,16 @@
+// Define DOM Elements
+const header = document.getElementById('header');
+const title = document.getElementById('title');
+const excerpt = document.getElementById('excerpt');
+const profile_img = document.getElementById('profile_img');
+const name = document.getElementById('name');
+const date = document.getElementById('date');
+
+// Elements with animated selectors
+const animated_bgs = document.querySelectorAll('.animated-bg');
+const animated_bgs_texts = document.querySelectorAll('.animated-bg-text');
+
+
+
+
+ 
