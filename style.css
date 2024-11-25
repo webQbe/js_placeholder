@@ -82,4 +82,53 @@ img {
     
 }
 
+.author {
 
+    display: flex; 
+
+}
+
+.profile-img{
+
+    border-radius: 50%; /* Make image circle shaped */
+    overflow: hidden; /* Keep image inside div */
+    height: 40px;
+    width: 40px;
+ 
+}
+
+.author-info{
+
+    display: flex; flex-direction: column; /* Align children vertically */
+    justify-content: space-around; /* Aligns the child elements (depending on the flex direction) with equal spacing around them within the container. 
+    
+        Visualization:
+
+        If the container width is 600px:
+
+            Assume there are 3 children and each child has a width of 50px.
+
+            Remaining space = 600px - (50px * 3) = 450px.
+
+            With space-around:
+
+                The total space is divided into 4 equal parts 
+
+                (1 part before the first child, 
+                 2 parts between children, and 
+                 1 part after the last child).
+
+                Each space = 450px / 4 = 112.5px.
+    
+    */
+    margin-left: 10px; /* Push towards right */
+    width: 100px;
+
+}
+
+.author-info small{
+
+    color: #aaa;
+    margin-top: 5px; /* Push downwards */
+    
+}
