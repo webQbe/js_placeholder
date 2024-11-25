@@ -26,6 +26,26 @@ img {
 
 }
 
+.card {
 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2); /* Applies a shadow effect around an element's box. 
+    
+    0: Horizontal offset — moves the shadow horizontally. No Horizontal offset.
+
+    3px: Vertical offset — moves the shadow vertically. 3px places the shadow 3 pixels below the element.
+
+    10px: Blur radius — controls the blur of the shadow. A higher value results in a softer, more spread-out shadow. Here, 10px creates a moderately soft shadow.
+
+    rgba(0, 0, 0, 0.2): Shadow color with transparency.
+
+        rgba stands for Red, Green, Blue, and Alpha (opacity).
+        0, 0, 0 represents black.
+        0.2 sets the opacity to 20%, making the shadow slightly visible.
+    */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden;
+    width: 350px;
+
+}
 
 
