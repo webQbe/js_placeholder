@@ -58,5 +58,28 @@ img {
 
     object-fit: cover; /* Show full image */
     height: 100%; width: 100%; /* Fit to container */
+
+}
+
+.card-content{
+
+    background-color: #fff;
+    padding: 30px; /* Move away content from borders */
+
+}
+
+.card-title{
+
+    height: 20px;
+    margin: 0;
+
+}
+
+.card-excerpt {
+
+    color: #777;
+    margin: 10px 0 20px; /* Top & Left-Right & Bottom */
     
 }
+
+
