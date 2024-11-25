@@ -10,6 +10,7 @@ const date = document.getElementById('date');
 const animated_bgs = document.querySelectorAll('.animated-bg');
 const animated_bg_texts = document.querySelectorAll('.animated-bg-text');
 
+
 function getData() {
 
     /* Add data to UI */
@@ -32,11 +33,14 @@ function getData() {
         // Add date
         date.innerHTML = 'Oct 08, 2020';
 
-    /* Remove .animated-bg & .animated-bg-text */
+    /* Hide animation */
     animated_bgs.forEach(bg => bg.classList.remove('animated-bg'));
     animated_bg_texts.forEach(bg => bg.classList.remove('animated-bg-text'));
      
 }    
+
+// Run getData() in 2.5 seconds
+setTimeout(getData, 2500);
 
 
  
